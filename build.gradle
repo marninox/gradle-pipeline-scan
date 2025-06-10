@@ -1,0 +1,19 @@
+// Apply the external dependencies.gradle file
+apply from: 'dependencies.gradle'
+
+plugins {
+    id 'java'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation libs.guava
+    testImplementation libs.junit
+}
+
+test {
+    useJUnitPlatform()
+}
