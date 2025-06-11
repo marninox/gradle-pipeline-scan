@@ -1,9 +1,8 @@
-// Apply the external dependencies.gradle file
-apply from: 'dependencies.gradle'
-
 plugins {
     id 'java'
 }
+
+apply from: 'dependencies.gradle'
 
 repositories {
     mavenCentral()
@@ -17,3 +16,4 @@ dependencies {
 test {
     useJUnitPlatform()
 }
+
