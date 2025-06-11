@@ -10,10 +10,10 @@ repositories {
 
 dependencies {
     implementation libs.guava
+    implementation libs.collections // vulnerable library
     testImplementation libs.junit
 }
 
 test {
     useJUnitPlatform()
 }
-
